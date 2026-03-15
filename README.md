@@ -10,7 +10,7 @@ It is built using **Next.js** and **React** and communicates with the **FastAPI 
 ### 1. Clone the repository
 
 ```bash
-git clone <https://github.com/shraddhaHS/TeamPage-frontend>
+git clone https://github.com/shraddhaHS/TeamPage-frontend
 ````
 
 ### 2. Install dependencies
@@ -58,9 +58,7 @@ While working on the team page assignment for armatrix, my main intention was to
 Frontend deployed on **Vercel**:
 
 ```
-<
 https://team-page-frontend.vercel.app/
->
 ```
 
 
