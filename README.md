@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Armatrix Team Page – Frontend
 
-## Getting Started
+This is the frontend implementation of the Armatrix Team Page assignment.  
+It is built using **Next.js** and **React** and communicates with the **FastAPI backend** to fetch and manage team member data.
 
-First, run the development server:
+---
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shraddhaHS/TeamPage-frontend
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Create a `.env.local` file and add the backend API URL
+
+```
+NEXT_PUBLIC_API_URL=<backend-url>
+```
+
+### 4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will run at:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Design Decisions
 
-To learn more about Next.js, take a look at the following resources:
+### Robotic-Arm-Themed Element
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+While working on the team page assignment for armatrix, my main intention was to design something that reflects the spirit of the product your company is building. Since armatrix develops robotic arms capable of performing multiple industrial tasks such as painting, welding, and other automated operations, I wanted the design itself to subtly echo that idea. My vision was to creatively incorporate the concept of a robotic arm and automation into the layout of the team page. Specifically, I imagined the robotic arm controlling a conveyor belt system where each team member’s card would appear as if it were being carried along the belt, moving left or right as the mechanism operates. The idea was to present the team members sequentially, almost like items in a production line, symbolizing precision, movement, and automation—qualities that align with the nature of your product. Although the current implementation is a simplified version due to time constraints, the core inspiration behind the design was to reinterpret the robotic arm’s real-world industrial functionality into an interactive visual element within the website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
+* The frontend dynamically fetches team member data from the backend API.
+* CRUD functionality is available through a **modal form** for adding, editing, and deleting team members.
+* The UI is **responsive** and works across desktop and mobile screens.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Frontend deployed on **Vercel**:
+
+```
+https://team-page-frontend.vercel.app/
+```
+
+
+
+
