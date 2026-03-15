@@ -61,7 +61,12 @@ img { display: block; }
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
-.nav-logo { display: flex; align-items: baseline; gap: 1px; }
+/* .nav-logo { display: flex; align-items: baseline; gap: 1px; } */
+.nav-logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
 .nav-logo-mark {
   font-family: var(--font-poppins);
   font-weight: 700; font-size: 18px;
@@ -533,12 +538,22 @@ img { display: block; }
   animation: spin-ring 8s linear infinite;
 }
 
-.panel-content { flex: 1; min-width: 0; }
+.panel-content { 
+  flex: 1; 
+  min-width: 0; 
+}
 .panel-role {
   font-family: var(--font-poppins);
-  font-size: 10px; font-weight: 600; letter-spacing: 0.2em;
-  color: var(--accent); text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  text-transform: uppercase;
   margin-bottom: 6px;
+
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 .panel-name {
   font-size: 28px; font-weight: 800; letter-spacing: -0.02em;

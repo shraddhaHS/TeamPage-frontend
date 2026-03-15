@@ -2,8 +2,7 @@ export default function Navbar({ onAddMember }) {
     return (
         <nav className="nav" id="nav">
             <div className="nav-logo">
-                <span className="nav-logo-mark">ARM</span>
-                <span className="nav-logo-sub">ATRIX</span>
+                <img src="/Logo_white.png" alt="Armatrix Logo" />
             </div>
             <button className="btn-add" id="btnAddMember" onClick={onAddMember}>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

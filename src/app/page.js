@@ -50,9 +50,10 @@ export default function Home() {
           body: formData,
         });
         if (res.ok) {
-          let newMember = await res.json();
-          newMember = newMember.data;
-          setMembers((prev) => [...prev, newMember]);
+          // let newMember = await res.json();
+          // newMember = newMember.data;
+          // setMembers((prev) => [...prev, newMember]);
+           await fetchMembers();
         }
       }
     } catch (error) {
@@ -69,10 +70,11 @@ export default function Home() {
         method: 'DELETE',
       });
       if (res.ok) {
-        setMembers((prev) => prev.filter((m) => m.id !== id));
+        // setMembers((prev) => prev.filter((m) => m.id !== id));
         if (selectedMember && selectedMember.id === id) {
           handleClosePanel();
         }
+         await fetchMembers();
       }
     } catch (error) {
       console.error("Failed to delete member", error);
