@@ -36,12 +36,13 @@ export default function Home() {
           body: formData,
         });
         if (res.ok) {
-          let updatedMember = await res.json();
-          updatedMember = updatedMember.data;
-          setMembers((prev) => prev.map((m) => (m.id === id ? updatedMember : m)));
-          if (selectedMember && selectedMember.id === id) {
-            setSelectedMember(updatedMember);
-          }
+          // let updatedMember = await res.json();
+          // updatedMember = updatedMember.data;
+          // setMembers((prev) => prev.map((m) => (m.id === id ? updatedMember : m)));
+          // if (selectedMember && selectedMember.id === id) {
+          //   setSelectedMember(updatedMember);
+          // }
+          await fetchMembers();
         }
       } else {
         // Create new member
