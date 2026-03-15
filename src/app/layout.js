@@ -13,8 +13,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "The Team — Armatrix Robotics",
-  description: "Meet the engineers and innovators behind Armatrix Robotics — pioneers in autonomous robotic systems.",
+  title: "The Team — Armatrix",
+  description: "Meet the engineers and innovators behind Armatrix — pioneers in autonomous robotic systems.",
 };
 
 export default function RootLayout({ children }) {
