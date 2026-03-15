@@ -88,10 +88,6 @@ export default function AddMemberModal({ isOpen, onClose, onAdd, initialData = n
         // else if (typeof formData.photo === 'string' && formData.photo !== '') {
         //     submitData.append('photo', formData.photo); // Send existing URL if unchanged
         // }
-        for (let pair of submitData.entries()) {
-  console.log(pair[0], pair[1]);
-}
-
         onAdd(submitData, initialData?.id); // Pass ID if updating
     };
 
