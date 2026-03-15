@@ -1,6 +1,3 @@
-Here is the **clean Markdown (.md) version** properly formatted:
-
-````md
 # Armatrix Team Page – Frontend
 
 This is the frontend implementation of the Armatrix Team Page assignment.  
